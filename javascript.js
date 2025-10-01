@@ -8,13 +8,18 @@ function getcolumnsdesired() {
     return Number(document.getElementById('cols').value);
 }
 
-function creatwithhtmltable(rows, cols) {
+function creatwithhtmltable(rows, cols, highlight) {
     let string
     if (rows && cols) {
         string = "<table>\n"
 
         for (let row =1; row <= rows; row++) {
-            string += "<tr>\n"
+
+            if (highlight && highlight ===row) {
+                string += "<tr class='highlight'>\n"
+            } else {
+                string += "<tr>\n"
+            }
 
             for (let col =1; col <= cols; col++) {
                 string += "<td>"
@@ -28,6 +33,13 @@ function creatwithhtmltable(rows, cols) {
         string = 'Provide some inputs'
     }
     document.getElementById("output").innerHTML = string;
+}
+function gethihglightvalue() {
+    let highlightvalue = document.getElementById('highlight').value;
+
+    if (!isNaN(highlightvalue !== '')) {
+        return Number(highlightvalue);
+    }
 }
 
 /* letters are irrelevant but we usually use i and j*/
