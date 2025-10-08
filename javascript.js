@@ -8,7 +8,7 @@ function getcolumnsdesired() {
     return Number(document.getElementById('cols').value);
 }
 
-function creatwithhtmltable(rows, cols, highlight) {
+// function creatwithhtmltable(rows, cols, highlight) {
     let string
     if (rows && cols) {
         string = "<table>\n"
@@ -41,7 +41,7 @@ function gethihglightvalue() {
         return Number(highlightvalue);
     }
 }
-
+//
 /* letters are irrelevant but we usually use i and j*/
 
 /* console.log('Here\'s a for loop showing 1...10:\n')
