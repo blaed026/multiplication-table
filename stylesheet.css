@@ -34,12 +34,21 @@ section.container {
         max-width: 90vw;
         max-height: 60vh;
 
-        table, th, td {
+        .container {
+        display: flex;
+
+        .columns {
+            display: flex;
+            flex-direction: column;
             border: 1px solid black;
             border-collapse: collapse;
 
-            tr:first-of-type, tr:last-of-type, td:first-of-type, td:last-of-type {
-                background-color: lightpink;
+            .rows {
+                display: flex;
+                flex-direction: row;
+                border: 1px solid black;
+                border-collapse: collapse;
+
             }
 
 
@@ -48,15 +57,13 @@ section.container {
             }
         }
 
-        table {
+        row, col {
             border: 1px solid black;
-
-            td {
-                padding: 2px;
-                text-align: center;
-            }
+            padding: 2px;
+            text-align: center;
         }
 
     }
 
-}
+
+
