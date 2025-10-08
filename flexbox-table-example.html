@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox grid example</title>
+
+    <style>
+        section.columns-of-rows {
+            display: flex;
+            flex-direction: row;
+
+            div{
+                border: 1px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tic-tac-toe style grid using three columns of three rows</h1>
+<section class="columns-of-rows">
+    <div>
+        <div>row 1</div>
+        <div> row 2</div>
+        <div>row 3</div>
+    </div>
+    <div>
+        <div>row 1</div>
+        <div>row 2</div>
+        <div>row 3</div>
+    </div>
+    <div>
+        <div>row 1</div>
+        <div>row 2</div>
+        <div>row 3</div>
+    </div>
+</section>
+
+<h1>Tic-tac-toe style grid using three rows of three columns</h1>
+<section class="rows-of-columns">
+    <div>row 1</div>
+    <div>row 2</div>
+    <div>row 3</div>
+</section>
+
+
+</body>
+</html>
