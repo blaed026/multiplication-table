@@ -8,7 +8,7 @@ function getcolumnsdesired() {
     return Number(document.getElementById('cols').value);
 }
 
-// function creatwithhtmltable(rows, cols, highlight) {
+function createWithFlexbox(rows, cols) {
     let string
     if (rows && cols) {
         string = "<table>\n"
