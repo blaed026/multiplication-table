@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        section.columns-of-rows {
+            display: flex;
+            flex-direction: row;
+        }
+
+        section.columns-of-rows div {
+            border: 1px solid black;
+        }
+
+        section.rows-of-columns {
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        section.rows-of-columns .row {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        section.rows-of-columns .row div {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<section class="container">
+    <h1>Multiplication Table Project 💀</h1>
+    <h3>Create your own multiplication table rendered with Flexbox!</h3>
+
+    <div class="generate_box">
+        <div class="inputs">
+            <label for="rows">Rows:
+                <input id="rows" type="number" value="12" placeholder="How many rows?"/>
+            </label>
+
+            <label for="cols">Columns:
+                <input id="cols" type="number" value="12" placeholder="How many columns?"/>
+            </label>
+
+            <label for="highlight">Highlight:
+                <input id="highlight" type="number" value="12" placeholder="Highlight value?"/>
+            </label>
+        </div>
+
+        <button id="generate" onclick="createWithFlexbox()">Generate Table!</button>
+    </div>
+</section>
+
+<h1>Tic-tac-toe style grid using three columns of three rows</h1>
+<section class="columns-of-rows">
+    <div>
+        <div>row 1</div>
+        <div>row 2</div>
+        <div>row 3</div>
+    </div>
+    <div>
+        <div>row 1</div>
+        <div>row 2</div>
+        <div>row 3</div>
+    </div>
+    <div>
+        <div>row 1</div>
+        <div>row 2</div>
+        <div>row 3</div>
+    </div>
+</section>
+
+<script>
+    function createWithFlexbox() {
+        const rows = document.getElementById('rows').value;
+        const cols = document.getElementById('cols').value;
+        const highlight = document.getElementById('highlight').value;
+        alert(`Rows: ${rows}, Cols: ${cols}, Highlight: ${highlight}`);
+    }
+</script>
+
+</body>
+</html>

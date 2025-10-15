@@ -1,5 +1,5 @@
 section.container {
-    width:  70vw;
+    width: 70vw;
     height: 100vh;
     margin: 0 auto;
 
@@ -35,35 +35,37 @@ section.container {
         max-height: 60vh;
 
         .container {
-        display: flex;
-
-        .columns {
             display: flex;
-            flex-direction: column;
-            border: 1px solid black;
-            border-collapse: collapse;
 
-            .rows {
+            .columns {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 border: 1px solid black;
                 border-collapse: collapse;
 
+                .rows {
+                    display: flex;
+                    flex-direction: row;
+                    border: 1px solid black;
+                    border-collapse: collapse;
+
+                }
+
+
+                .highlight {
+                    background-color: palevioletred;
+                }
             }
 
-
-            .highlight {
-            background-color: palevioletred;
+            row, col {
+                border: 1px solid black;
+                padding: 2px;
+                text-align: center;
             }
-        }
 
-        row, col {
-            border: 1px solid black;
-            padding: 2px;
-            text-align: center;
         }
-
     }
+}
 
 
 
