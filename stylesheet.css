@@ -8,7 +8,7 @@ section.container {
     align-items: center;
     gap: 10px;
 
-    .generate_box {
+    .generate-box {
         display: flex;
         gap: 10px;
 
@@ -23,49 +23,18 @@ section.container {
                 justify-content: space-between;
             }
         }
-
-        button {
-            background-color: lightpink;
-        }
     }
 
     #output {
-        overflow: scroll;
-        max-width: 90vw;
-        max-height: 60vh;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
 
-        .container {
+        .row {
             display: flex;
-
-            .columns {
-                display: flex;
-                flex-direction: column;
-                border: 1px solid black;
-                border-collapse: collapse;
-
-                .rows {
-                    display: flex;
-                    flex-direction: row;
-                    border: 1px solid black;
-                    border-collapse: collapse;
-
-                }
-
-
-                .highlight {
-                    background-color: palevioletred;
-                }
-            }
-
-            row, col {
-                border: 1px solid black;
-                padding: 2px;
-                text-align: center;
-            }
-
+            justify-content: space-between;
+            gap: 5px;
         }
     }
 }
-
-
-
