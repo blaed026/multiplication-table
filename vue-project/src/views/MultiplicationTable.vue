@@ -5,6 +5,8 @@ import {ref} from 'vue';
 let name = ref(null)
 let rows = ref(12)
 let cols = ref(12)
+let shouldCalculate = ref(true)
+let toHighlight = ref(null)
 
 console.log( 'How many rows do I have?', rows.value)
 </script>
@@ -29,16 +31,29 @@ console.log( 'How many rows do I have?', rows.value)
       <input type="number" id="cols" v-model.number="cols"/>
     </label>
 
+    <label for="cols">
+      <span>Cols</span>
+      <input type="number" id="cols" v-model.number="cols"/>
+    </label>
+
+    <label id="toHighlight">
+      <span>Which row and column do you want to highlight?</span>
+      <input type="number" id="toHighlight" v-model.number="toHighlight"/>
+    </label>
+
     <p v-if="name"> Hi there {{name}}, lets build our table:</p>
     <p v-else>Hi there!</p>
 
     <p>You want {{rows}} rows</p>
     <p>You want {{cols}} cols</p>
+    <p>Should we calculate the times table value? {{ shouldCalculate }}</p>
 
     <table>
       <tr v-for="row in rows" :key="row">
         <td v-for="col in cols" :key="col">
-          x
+          <template v-if="shouldCalculate === true">{{ row * col }}</template>
+
+          <template v-else>{{ row }} * {{ col }}</template>
         </td>
       </tr>
     </table>
