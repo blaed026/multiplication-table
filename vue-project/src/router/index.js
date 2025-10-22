@@ -11,11 +11,19 @@ const router = createRouter({
       name: 'Home',
       component: Home
     },
+
     {
       path: '/multiplication-table',
       name: 'MultiplicationTable',
       component: MultiplicationTable
+    },
+
+    {
+      path: '/about-me',
+      name: 'AboutMe',
+      component: AboutMe
     }
+
   ],
 })
 

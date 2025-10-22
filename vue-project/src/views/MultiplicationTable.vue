@@ -32,8 +32,16 @@ console.log( 'How many rows do I have?', rows.value)
     <p v-if="name"> Hi there {{name}}, lets build our table:</p>
     <p v-else>Hi there!</p>
 
-    <p>How many rows do I have? {{rows}}</p>
-    <p>How many cols do I have? {{cols}}</p>
+    <p>You want {{rows}} rows</p>
+    <p>You want {{cols}} cols</p>
+
+    <table>
+      <tr v-for="row in rows" :key="row">
+        <td v-for="col in cols" :key="col">
+          x
+        </td>
+      </tr>
+    </table>
   </div>
 </template>
 
