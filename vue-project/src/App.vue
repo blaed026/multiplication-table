@@ -11,7 +11,7 @@
 
         <router-link :to="{ name: 'AboutMe'} ">About Me</router-link>
 
-        <router-link :to="{ name: 'multiplication-table'} ">Multiplication Table</router-link>
+        <router-link :to="{ name: 'MultiplicationTable'} ">Multiplication Table</router-link>
 
       </nav>
     </header>

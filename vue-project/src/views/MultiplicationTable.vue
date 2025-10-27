@@ -31,11 +31,6 @@ console.log( 'How many rows do I have?', rows.value)
       <input type="number" id="cols" v-model.number="cols"/>
     </label>
 
-    <label for="cols">
-      <span>Cols</span>
-      <input type="number" id="cols" v-model.number="cols"/>
-    </label>
-
     <label id="toHighlight">
       <span>Which row and column do you want to highlight?</span>
       <input type="number" id="toHighlight" v-model.number="toHighlight"/>
@@ -49,8 +44,8 @@ console.log( 'How many rows do I have?', rows.value)
     <p>Should we calculate the times table value? {{ shouldCalculate }}</p>
 
     <table>
-      <tr v-for="row in rows" :key="row">
-        <td v-for="col in cols" :key="col">
+      <tr v-for="row in rows" :key="row" :class="{ 'highlighted' : row=== toHighlight }">
+        <td v-for="col in cols" :key="col" :class="{ 'highlighted' : col===toHighlight }">
           <template v-if="shouldCalculate === true">{{ row * col }}</template>
 
           <template v-else>{{ row }} * {{ col }}</template>
@@ -70,9 +65,19 @@ div.inputs {
 
   label {
     padding: 10px;
-    border: 1px solid red;
+    border: 1px solid mediumslateblue;
     display: flex;
     gap: 15px;
+  }
+  table {
+    border: 1px solid mediumslateblue;
+    border-collapse: collapse;
+    tr, td{
+      text-align: center;
+      &.highlighted {
+        background-color: mediumslateblue;
+      }
+    }
   }
 }
 </style>
