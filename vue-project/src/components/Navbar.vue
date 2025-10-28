@@ -1,17 +1,14 @@
 <script setup lang="ts">
 
+import MyButton from "@/components/MyButton.vue";
 </script>
 
 <template>
   <nav>
-    <router-link to="/">Home</router-link>
-
-    <router-link :to="{ name: 'Home'} ">Go to home</router-link>
-
-    <router-link :to="{ name: 'AboutMe'} ">About Me</router-link>
-
-    <router-link :to="{ name: 'MultiplicationTable'} ">Multiplication Table</router-link>
-  </nav>
+    <MyButton link-text="Home" route-name="Home"/>
+    <MyButton link-text="About me" route-name="AboutMe"/>
+    <MyButton link-text="Multiplication Table" route-name="MultiplicationTable"/>
+    </nav>
 </template>
 
 <style scoped>
@@ -19,7 +16,6 @@
     display: flex;
     gap: 15px;
     justify-content: center;
-    /* code here would apply to content of nav/links */
 
     a{
       text-decoration: none;
