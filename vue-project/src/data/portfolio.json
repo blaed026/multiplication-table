@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "thumbnail": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "item_title": "Y-Solowarm",
+    "description": "Comfortable and adjustable harness for dogs.",
+    "when_created": 2016,
+    "materials_used": "Figma",
+    "created_for": "Packaging"
+  },
+  {
+    "id": 2,
+    "thumbnail": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "item_title": "Mat Lam Tam",
+    "description": "Reusable tote bags for shopping and eco-friendly living.",
+    "when_created": 2017,
+    "materials_used": "Fresco",
+    "created_for": "Packaging"
+  },
+  {
+    "id": 3,
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "item_title": "Treeflex",
+    "description": "Roasted cashews coated in honey and sesame seeds for a sweet treat.",
+    "when_created": 2012,
+    "materials_used": "Procreate",
+    "created_for": "Web Design"
+  },
+  {
+    "id": 4,
+    "thumbnail": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "item_title": "Matsoft",
+    "description": "Rechargeable screwdriver with multiple bits for DIY projects.",
+    "when_created": 2010,
+    "materials_used": "Lightroom",
+    "created_for": "Web Design"
+  },
+  {
+    "id": 5,
+    "thumbnail": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "item_title": "Opela",
+    "description": "Peel and stick wallpaper for easy home decor changes.",
+    "when_created": 1999,
+    "materials_used": "InDesign",
+    "created_for": "Typography"
+  },
+  {
+    "id": 6,
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "item_title": "Vagram",
+    "description": "Abstract canvas print to enhance home decor.",
+    "when_created": 2012,
+    "materials_used": "Photoshop",
+    "created_for": "Packaging"
+  },
+  {
+    "id": 7,
+    "thumbnail": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "item_title": "Bamity",
+    "description": "Stylish ripped boyfriend jeans for a relaxed, effortlessly cool vibe.",
+    "when_created": 1999,
+    "materials_used": "Photoshop",
+    "created_for": "Text and Image"
+  },
+  {
+    "id": 8,
+    "thumbnail": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "item_title": "Prodder",
+    "description": "Rich and smooth cold brew coffee concentrate, just add water or milk.",
+    "when_created": 2006,
+    "materials_used": "Fresco",
+    "created_for": "Game Design"
+  },
+  {
+    "id": 9,
+    "thumbnail": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "item_title": "Tempsoft",
+    "description": "Non-toxic traps for catching household pests safely.",
+    "when_created": 2015,
+    "materials_used": "Fresco",
+    "created_for": "Text and Image"
+  },
+  {
+    "id": 10,
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "item_title": "Wrapsafe",
+    "description": "Wide pasta sheets for making lasagna.",
+    "when_created": 2008,
+    "materials_used": "Figma",
+    "created_for": "Text and Image"
+  }
+]

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/home.vue'
 import MultiplicationTable from '../views/MultiplicationTable.vue'
 import AboutMe from "@/views/AboutMe.vue";
+import AllItems from "@/views/portfolio/AllItems.vue";
 
 
 const router = createRouter({
@@ -23,6 +24,12 @@ const router = createRouter({
       path: '/about-me',
       name: 'AboutMe',
       component: AboutMe
+    },
+
+    {
+      path: '/examples/portfolio',
+      name: 'Portfolio',
+      component: AllItems
     }
 
   ],
