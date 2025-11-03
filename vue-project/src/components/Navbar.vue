@@ -8,6 +8,7 @@ import MyButton from "@/components/MyButton.vue";
     <MyButton link-text="Home" route-name="Home"/>
     <MyButton link-text="About me" route-name="AboutMe"/>
     <MyButton link-text="Multiplication Table" route-name="MultiplicationTable"/>
+    <MyButton link-text="Portfolio" route-name="PortfolioLandingPage"/>
     </nav>
 </template>
 
